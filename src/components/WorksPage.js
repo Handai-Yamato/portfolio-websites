@@ -10,7 +10,7 @@ const WorksPage = () => {
     <div className="p-4 md:p-0">
       <Heading title={"Works"} />
       <div>
-        <a href="https://chatbot-app-acbf8.web.app/">
+        <a href="https://my-portfolio-6ae05.web.app/">
           <img
             className="w-84 m-auto rounded-md transition-all hover:scale-105 border-2 border-gray-100"
             src={PortfolioImage}
@@ -27,8 +27,8 @@ const WorksPage = () => {
           <ul className="flex flex-col gap-2 mt-3 text-sm">
             <li>
               <span className="text-green-200 bg-green-400 bg-opacity-10 p-1">WEBSITE</span>
-              <a className="ml-2 text-pink-500" href="https://chatbot-app-acbf8.web.app/">
-                https://chatbot-app-acbf8.web.app/
+              <a className="ml-2 text-pink-500" href="https://my-portfolio-6ae05.web.app/">
+                https://my-portfolio-6ae05.web.app/
               </a>
             </li>
             <li>

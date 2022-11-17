@@ -11,6 +11,14 @@
 # production
 /build
 
+# Firebase resources
+.firebaserc
+.firebase
+firestore.rules
+src/webhookConfig.js
+src/firebase/config.js
+src_class/firebase/config.js
+
 # misc
 .DS_Store
 .env.local
