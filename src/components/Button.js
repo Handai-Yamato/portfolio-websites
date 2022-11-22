@@ -1,11 +1,30 @@
 import React from "react";
+import styled from "styled-components";
 
 const Button = (props) => {
   return (
-    <div className="inline-block duration-300">
-      <p className=" w-36 p-2 rounded-lg flex items-center justify-center text-black  bg-green-400 no-underline ">{props.text}</p>
-    </div>
+    <ButtonContainer>
+      <PrimaryButton>{props.text}</PrimaryButton>
+    </ButtonContainer>
   );
 };
 
 export default Button;
+
+const ButtonContainer = styled.div`
+  display: inline-block;
+`;
+
+const PrimaryButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 200px;
+  padding: 8px 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 1px solid #81e6d9;
+  color: #202023;
+  background-color: #81e6d9;
+`;
