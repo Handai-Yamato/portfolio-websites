@@ -31,7 +31,7 @@ const WorksPage = () => {
         }}
       >
         <div>
-          <a href="https://chatbot-app-acbf8.web.app/" target={"blank"}>
+          <a href="https://my-portfolio-6ae05.web.app" target={"blank"}>
             <WorksImage src={PortfolioImage} alt="" />
           </a>
           <div className="">
@@ -46,8 +46,8 @@ const WorksPage = () => {
               <WorksItem>
                 <LinkHead>WEBSITE</LinkHead>
                 <LinkText>
-                  <a href="https://chatbot-app-acbf8.web.app/">
-                    https://chatbot-app-acbf8.web.app/
+                  <a href="https://my-portfolio-6ae05.web.app">
+                  https://my-portfolio-6ae05.web.app
                   </a>
                 </LinkText>
               </WorksItem>
