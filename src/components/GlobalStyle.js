@@ -40,6 +40,10 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.2;
         font-family: "M PLUS Rounded 1c", sans-serif;
     }
+
+    h3 {
+        margin: 0;
+    }
     
     ul {
         margin: 0;

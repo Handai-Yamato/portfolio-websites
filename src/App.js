@@ -4,9 +4,9 @@ import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import UsesPage from "./components/UsesPage";
 import WorksPage from "./components/WorksPage";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import { sm } from "../src/components/media";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -35,7 +35,7 @@ const Main = styled.main`
   padding-left: 1.5rem;
 
   ${sm`
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 0;
+  padding-left: 0;
   `}
 `;
