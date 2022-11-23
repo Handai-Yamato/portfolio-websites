@@ -1,38 +1,45 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
     position: fixed;
-    width: 30px;
-    height: 20px;
+    width: 36px;
+    height: 30px;
     right: 16px;
-    top: 20px;
+    top: 16px;
+
 }
 
-@media (min-width:640px) {
+@media screen and (min-width:640px) {
     .bm-burger-button {
-        display: none !important;
-
+        display: none;
     }
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-    background: #d2d3d5;
+    background: #5b6073;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-    /* background: #a90000; */
+    background: #005b99;
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
+    top: 16px;
     height: 24px;
     width: 24px;
 }
 
+.bm-cross-button span {
+    width: 3px !important;
+    height: 24px !important;
+    border-radius: 12px;
+}
+
 /* Color/shape of close button cross */
 .bm-cross {
-    background: #bdc3c7;
+    background: #5b6073;
 }
 
 /*
@@ -41,60 +48,49 @@
   */
 .bm-menu-wrap {
     position: fixed;
-    top: 64px !important;
     height: 100%;
-    right: 16px !important;
-    width: 100%;
-    max-width: 210px;
+    width: 150px !important;
 }
 
 /* General sidebar styles */
 .bm-menu {
-    width: 100%;
-    min-height: 160px;
-    margin: auto;
-    background: #2d3748;
-    padding: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh !important;
+    width: 150px;
+    background: rgb(222, 214, 214);
+    /* padding: 2.5em 1.5em 0; */
+    padding-top: 48px;
+    padding-left: 16px;
     font-size: 1.15em;
-    border: 2px solid #fff;
-    border-radius: 8px;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-    fill: #2d3748;
+    fill: #373a47;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 8px;
     color: #b8b7ad;
+    padding: 0.8em;
 }
 
 /* Individual item */
 .bm-item {
     display: inline-block;
-    width: 50px;
-    color: #d1d1d1;
-    margin-bottom: 10px;
-    text-align: left;
     text-decoration: none;
-    transition: color 0.2s;
-    font-size: 16px;
-}
-
-.bm-item:hover {
-    color: #ffffff;
+    outline: none;
 }
 
 /* Styling of overlay */
 .bm-overlay {
     top: 0;
     left: 0;
-    width: 100% !important;
     height: 100vh !important;
-    background: none !important;
-    /* background: rgba(0, 0, 0, 0.3); */
+    background: rgba(0, 0, 0, 0.7) !important;
 }

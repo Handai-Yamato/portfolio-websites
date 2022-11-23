@@ -7,11 +7,13 @@ import WorksPage from "./components/WorksPage";
 import styled from "styled-components";
 import { sm } from "../src/components/media";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HamburgerMenu from "./components/HamburgerMenu";
 
 function App() {
   return (
     <Router>
       <Header />
+      <HamburgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
       <Main>
         <Routes>
           <Route path="/" element={<HomePage />}></Route>

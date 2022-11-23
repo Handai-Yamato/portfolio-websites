@@ -10,7 +10,7 @@ import { sm } from "./media";
 
 const WorksPage = () => {
   return (
-    <dir>
+    <div>
       <div>
         <motion.div
           initial={{ opacity: 0, y: 10 }} // 初期状態
@@ -126,7 +126,7 @@ const WorksPage = () => {
             <div>
               <WorksTitle>LINE Clone</WorksTitle>
               <WorksText>
-                Reactを用いて、Firebase AuthenticationでGoogle認証の実装に挑戦しました。
+                Reactを用いて、Firebase-AuthenticationでGoogle認証の実装に挑戦しました。
               </WorksText>
               <WorksList>
                 <WorksItem>
@@ -244,7 +244,7 @@ const WorksPage = () => {
           </WorkContainer>
         </motion.div>
       </WorksWrap>
-    </dir>
+    </div>
   );
 };
 
