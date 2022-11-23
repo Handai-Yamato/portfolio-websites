@@ -5,7 +5,7 @@ import "../assets/styles/style.css";
 
 const HamburgerMenu = (props) => {
   return (
-    <Menu right>
+    <Menu right disableAutoFocus>
       <Link to="/">Home</Link>
       <Link to="/works">Works</Link>
       <Link to="/Uses">Uses</Link>

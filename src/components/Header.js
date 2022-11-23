@@ -25,7 +25,7 @@ const Header = () => {
               <Link to="/uses">Uses</Link>
             </li>
             <li>
-              <GithubLink href="https://github.com/" target={"_blank"}>
+              <GithubLink href="https://github.com/" target={"blank"}>
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -80,19 +80,23 @@ const HeaderName = styled.h1`
 const HeaderNameLink = styled(Link)`
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   color: #ffff;
+
+  &:hover {
+    text-decoration: none;
+
+    & img {
+      rotate: -10deg;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+    }
+  }
 `;
 
 const HeaderIcon = styled.img`
-  height: 32px;
-  width: 32px;
-
-  &:hover {
-    rotate: -10deg;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-  }
+  height: 24px;
+  width: 24px;
 `;
 
 const HeaderNav = styled.nav`
