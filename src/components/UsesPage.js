@@ -27,95 +27,95 @@ export default function BasicModal() {
       </motion.div>
 
       <Contents>
-        <motion.div
-          initial={{ opacity: 0, y: 10 }} // 初期状態
-          animate={{ opacity: 1, y: 0 }} // マウント時
-          exit={{ opacity: 0, y: 10 }} // アンマウント時
-          transition={{
-            duration: 0.8,
-          }}
-        >
-          <UsesContent>
+        <UsesContent>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }} // 初期状態
+            animate={{ opacity: 1, y: 0 }} // マウント時
+            exit={{ opacity: 0, y: 10 }} // アンマウント時
+            transition={{
+              duration: 0.8,
+            }}
+          >
             <Image src={Keychron} alt="" />
             <UsesName>Keychron K6</UsesName>
             <Type>Main keyboard</Type>
-          </UsesContent>
-        </motion.div>
+          </motion.div>
+        </UsesContent>
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }} // 初期状態
-          animate={{ opacity: 1, y: 0 }} // マウント時
-          exit={{ opacity: 0, y: 10 }} // アンマウント時
-          transition={{
-            duration: 0.8,
-          }}
-        >
-          <UsesContent>
+        <UsesContent>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }} // 初期状態
+            animate={{ opacity: 1, y: 0 }} // マウント時
+            exit={{ opacity: 0, y: 10 }} // アンマウント時
+            transition={{
+              duration: 0.8,
+            }}
+          >
             <Image src={Mxkeys} alt="" />
             <UsesName>MX KEYS MINI for mac</UsesName>
             <Type>Office keyboard</Type>
-          </UsesContent>
-        </motion.div>
+          </motion.div>
+        </UsesContent>
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }} // 初期状態
-          animate={{ opacity: 1, y: 0 }} // マウント時
-          exit={{ opacity: 0, y: 10 }} // アンマウント時
-          transition={{
-            duration: 0.8,
-          }}
-        >
-          <UsesContent>
+        <UsesContent>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }} // 初期状態
+            animate={{ opacity: 1, y: 0 }} // マウント時
+            exit={{ opacity: 0, y: 10 }} // アンマウント時
+            transition={{
+              duration: 0.8,
+            }}
+          >
             <Image src={Skyloong} alt="" />
             <UsesName>Skyloong SK64</UsesName>
             <Type>Sub keyboard</Type>
-          </UsesContent>
-        </motion.div>
+          </motion.div>
+        </UsesContent>
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }} // 初期状態
-          animate={{ opacity: 1, y: 0 }} // マウント時
-          exit={{ opacity: 0, y: 10 }} // アンマウント時
-          transition={{
-            duration: 0.8,
-          }}
-        >
-          <UsesContent>
+        <UsesContent>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }} // 初期状態
+            animate={{ opacity: 1, y: 0 }} // マウント時
+            exit={{ opacity: 0, y: 10 }} // アンマウント時
+            transition={{
+              duration: 0.8,
+            }}
+          >
             <Image src={Boyata} alt="" />
             <UsesName>BOYATA</UsesName>
             <Type>PC Stand</Type>
-          </UsesContent>
-        </motion.div>
+          </motion.div>
+        </UsesContent>
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }} // 初期状態
-          animate={{ opacity: 1, y: 0 }} // マウント時
-          exit={{ opacity: 0, y: 10 }} // アンマウント時
-          transition={{
-            duration: 0.8,
-          }}
-        >
-          <UsesContent>
+        <UsesContent>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }} // 初期状態
+            animate={{ opacity: 1, y: 0 }} // マウント時
+            exit={{ opacity: 0, y: 10 }} // アンマウント時
+            transition={{
+              duration: 0.8,
+            }}
+          >
             <Image src={Usbhub} alt="" />
             <UsesName>Anker USB hub</UsesName>
             <Type>USB hub</Type>
-          </UsesContent>
-        </motion.div>
+          </motion.div>
+        </UsesContent>
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }} // 初期状態
-          animate={{ opacity: 1, y: 0 }} // マウント時
-          exit={{ opacity: 0, y: 10 }} // アンマウント時
-          transition={{
-            duration: 0.8,
-          }}
-        >
-          <UsesContent>
+        <UsesContent>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }} // 初期状態
+            animate={{ opacity: 1, y: 0 }} // マウント時
+            exit={{ opacity: 0, y: 10 }} // アンマウント時
+            transition={{
+              duration: 0.8,
+            }}
+          >
             <Image src={Desk} alt="" />
             <UsesName>SUKIDA 電動昇降デスク</UsesName>
             <Type>Desk</Type>
-          </UsesContent>
-        </motion.div>
+          </motion.div>
+        </UsesContent>
       </Contents>
     </div>
   );
@@ -142,6 +142,7 @@ const HeadText = styled.p`
 
 const UsesContent = styled.div`
   text-align: center;
+
   ${sm`
   width: calc(50% - 24px);
   flex-direction: unset;
