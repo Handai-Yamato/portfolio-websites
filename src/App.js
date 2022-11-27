@@ -1,5 +1,4 @@
 import "./assets/styles/style.css";
-import "./assets/styles/hamburger.css";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import UsesPage from "./components/UsesPage";

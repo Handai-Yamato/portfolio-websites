@@ -24,6 +24,10 @@ const GlobalStyle = createGlobalStyle`
         transition-duration: .3s;
     }
 
+    img {
+        max-width: 100%;
+    }
+
     a:hover {
         text-decoration:  underline;
         opacity: 0.7;

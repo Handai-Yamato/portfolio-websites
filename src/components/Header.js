@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <HeaderBlock>
       <HeaderInner>
-        <div>
+        <div onclick="" ontouchstart="">
           <HeaderNameLink to="/">
             <HeaderIcon src={icon} alt="" />
             <HeaderName>Yamato Handai</HeaderName>
@@ -25,7 +25,10 @@ const Header = () => {
               <Link to="/uses">Uses</Link>
             </li>
             <li>
-              <GithubLink href="https://github.com/" target={"blank"}>
+              <GithubLink
+                href="https://github.com/Handai-Yamato/portfolio-websites"
+                target={"blank"}
+              >
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -73,8 +76,12 @@ const HeaderInner = styled.div`
 `;
 
 const HeaderName = styled.h1`
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
+
+  ${sm`
+  font-size: 18px;
+  `}
 `;
 
 const HeaderNameLink = styled(Link)`
