@@ -37,7 +37,7 @@ const WorksPage = () => {
             <a href="https://my-portfolio-6ae05.web.app" target={"blank"}>
               <WorksImage src={PortfolioImage} alt="" />
             </a>
-            <div className="">
+            <div>
               <WorksTitle>My Portfolio</WorksTitle>
               <WorksText>
                 ポートフォリオをReactでつくりました。CSSはstyled-componentsを使用しています。
@@ -326,7 +326,7 @@ const WorksItem = styled.li`
 
 `;
 
-const LinkHead = styled.a`
+const LinkHead = styled.div`
   padding: 4px;
   color: rgb(187 247 208);
   background-color: rgb(74 222 128 / 0.1);
