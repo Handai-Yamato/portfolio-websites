@@ -4,247 +4,239 @@ import KyonokaigobinImage from "../assets/img/image_kyonokaigobin.png";
 import TypingGameImage from "../assets/img/image_typinggame.png";
 import PortfolioImage from "../assets/img/image_portfolio.png";
 import LineCloneImage from "../assets/img/image_line-clone.png";
+import CrmlabCloneImage from "../assets/img/image_crmlab-clone.png";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { sm } from "./media";
 
+const variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      duration: 1.4,
+    },
+  },
+};
+
 const WorksPage = () => {
   return (
-    <div>
-      <div>
-        <motion.div
-          initial={{ opacity: 0, y: 10 }} // 初期状態
-          animate={{ opacity: 1, y: 0 }} // マウント時
-          exit={{ opacity: 0, y: 10 }} // アンマウント時
-          transition={{
-            duration: 0.8,
-          }}
-        >
-          <h2>Works</h2>
-        </motion.div>
-      </div>
+    <motion.div variants={variants} initial="hidden" animate="visible">
+      <h2>Works</h2>
 
       <WorksWrap>
-        <motion.div
-          initial={{ opacity: 0, y: 10 }} // 初期状態
-          animate={{ opacity: 1, y: 0 }} // マウント時
-          exit={{ opacity: 0, y: 10 }} // アンマウント時
-          transition={{
-            duration: 0.8,
-          }}
-        >
-          <WorkContainer>
-            <a href="https://my-portfolio-6ae05.web.app" target={"blank"}>
-              <WorksImage src={PortfolioImage} alt="" />
-            </a>
-            <div>
-              <WorksTitle>My Portfolio</WorksTitle>
-              <WorksText>
-                ポートフォリオをReactでつくりました。CSSはstyled-componentsを使用しています。
-              </WorksText>
-              <WorksList>
-                <WorksItem>
-                  <LinkHead>WEBSITE</LinkHead>
-                  <LinkText>
-                    <a href="https://my-portfolio-6ae05.web.app">
-                      https://my-portfolio-6ae05.web.app
-                    </a>
-                  </LinkText>
-                </WorksItem>
-                <WorksItem>
-                  <LinkHead>SOURCE</LinkHead>
-                  <LinkText>
-                    <a href="https://github.com/Handai-Yamato/portfolio-websites" target={"blank"}>
-                      https://github.com/Handai-Yamato/portfolio-websites
-                    </a>
-                  </LinkText>
-                </WorksItem>
-                <WorksItem>
-                  <LinkHead>STACK</LinkHead>
-                  <LinkText>React, Framer motion, Firebase(Hosting)</LinkText>
-                </WorksItem>
-              </WorksList>
-            </div>
-          </WorkContainer>
-        </motion.div>
+        <WorkContainer>
+          <a href="https://crmlab-clone.vercel.app/" target={"blank"}>
+            <WorksImage src={CrmlabCloneImage} alt="" />
+          </a>
+          <div>
+            <WorksTitle>CRMラボ corporate websites</WorksTitle>
+            <WorksText>
+              Next.jsとmicroCMSを連携して、勝手に自社サイトをいい感じにつくりなおしてみました。
+            </WorksText>
+            <WorksList>
+              <WorksItem>
+                <LinkHead>WEBSITE</LinkHead>
+                <LinkText>
+                  <a href="https://crmlab-clone.vercel.app/">https://crmlab-clone.vercel.app/</a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>SOURCE</LinkHead>
+                <LinkText>
+                  <a href="https://github.com/Handai-Yamato/crmlab-clone" target={"blank"}>
+                    https://github.com/Handai-Yamato/crmlab-clone
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>STACK</LinkHead>
+                <LinkText>Next.js,MUI,Framer motion,microCMS,Vercel(Hosting)</LinkText>
+              </WorksItem>
+            </WorksList>
+          </div>
+        </WorkContainer>
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }} // 初期状態
-          animate={{ opacity: 1, y: 0 }} // マウント時
-          exit={{ opacity: 0, y: 10 }} // アンマウント時
-          transition={{
-            duration: 0.8,
-          }}
-        >
-          <WorkContainer>
-            <a href="https://chatbot-app-acbf8.web.app/" target={"blank"}>
-              <WorksImage src={ChatbotImage} alt="" />
-            </a>
-            <div>
-              <WorksTitle>Chatobot App</WorksTitle>
-              <WorksText>
-                チャットボット形式で私のことについて質問できます。ReactとFirebase、MUIの学習のためにつくりました。
-              </WorksText>
-              <WorksList>
-                <WorksItem>
-                  <LinkHead>WEBSITE</LinkHead>
-                  <LinkText>
-                    <a href="https://chatbot-app-acbf8.web.app/" target={"blank"}>
-                      https://chatbot-app-acbf8.web.app/
-                    </a>
-                  </LinkText>
-                </WorksItem>
-                <WorksItem>
-                  <LinkHead>SOURCE</LinkHead>
-                  <LinkText>
-                    <a href="https://github.com/Handai-Yamato/chatbot-app" target={"blank"}>
-                      https://github.com/Handai-Yamato/chatbot-app
-                    </a>
-                  </LinkText>
-                </WorksItem>
-                <WorksItem>
-                  <LinkHead>STACK</LinkHead>
-                  <LinkText>React, MUI, Firebase(Hosting)</LinkText>
-                </WorksItem>
-              </WorksList>
-            </div>
-          </WorkContainer>
-        </motion.div>
+        <WorkContainer>
+          <a href="https://my-portfolio-6ae05.web.app" target={"blank"}>
+            <WorksImage src={PortfolioImage} alt="" />
+          </a>
+          <div>
+            <WorksTitle>My Portfolio</WorksTitle>
+            <WorksText>
+              ポートフォリオをReactでつくりました。CSSはstyled-componentsを使用しています。
+            </WorksText>
+            <WorksList>
+              <WorksItem>
+                <LinkHead>WEBSITE</LinkHead>
+                <LinkText>
+                  <a href="https://my-portfolio-6ae05.web.app">
+                    https://my-portfolio-6ae05.web.app
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>SOURCE</LinkHead>
+                <LinkText>
+                  <a href="https://github.com/Handai-Yamato/portfolio-websites" target={"blank"}>
+                    https://github.com/Handai-Yamato/portfolio-websites
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>STACK</LinkHead>
+                <LinkText>React, Framer motion, Firebase(Hosting)</LinkText>
+              </WorksItem>
+            </WorksList>
+          </div>
+        </WorkContainer>
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }} // 初期状態
-          animate={{ opacity: 1, y: 0 }} // マウント時
-          exit={{ opacity: 0, y: 10 }} // アンマウント時
-          transition={{
-            duration: 0.8,
-          }}
-        >
-          <WorkContainer>
-            <a href="https://line-clone-a5d94.web.app/" target={"blank"}>
-              <WorksImage src={LineCloneImage} alt="" />
-            </a>
-            <div>
-              <WorksTitle>LINE Clone</WorksTitle>
-              <WorksText>
-                Reactを用いて、Firebase-AuthenticationでGoogle認証の実装に挑戦しました。
-              </WorksText>
-              <WorksList>
-                <WorksItem>
-                  <LinkHead>WEBSITE</LinkHead>
-                  <LinkText>
-                    <a href="https://line-clone-a5d94.web.app/" target={"blank"}>
-                      https://line-clone-a5d94.web.app/
-                    </a>
-                  </LinkText>
-                </WorksItem>
-                <WorksItem>
-                  <LinkHead>SOURCE</LinkHead>
-                  <LinkText>
-                    <a href="https://github.com/Handai-Yamato/react-line-clone" target={"blank"}>
-                      https://github.com/Handai-Yamato/react-line-clone
-                    </a>
-                  </LinkText>
-                </WorksItem>
-                <WorksItem>
-                  <LinkHead>STACK</LinkHead>
-                  <LinkText>React, MUI, Firebase(Hosting, Authentication)</LinkText>
-                </WorksItem>
-              </WorksList>
-            </div>
-          </WorkContainer>
-        </motion.div>
+        <WorkContainer>
+          <a href="https://chatbot-app-acbf8.web.app/" target={"blank"}>
+            <WorksImage src={ChatbotImage} alt="" />
+          </a>
+          <div>
+            <WorksTitle>Chatobot App</WorksTitle>
+            <WorksText>
+              チャットボット形式で私のことについて質問できます。ReactとFirebase、MUIの学習のためにつくりました。
+            </WorksText>
+            <WorksList>
+              <WorksItem>
+                <LinkHead>WEBSITE</LinkHead>
+                <LinkText>
+                  <a href="https://chatbot-app-acbf8.web.app/" target={"blank"}>
+                    https://chatbot-app-acbf8.web.app/
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>SOURCE</LinkHead>
+                <LinkText>
+                  <a href="https://github.com/Handai-Yamato/chatbot-app" target={"blank"}>
+                    https://github.com/Handai-Yamato/chatbot-app
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>STACK</LinkHead>
+                <LinkText>React, MUI, Firebase(Hosting)</LinkText>
+              </WorksItem>
+            </WorksList>
+          </div>
+        </WorkContainer>
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }} // 初期状態
-          animate={{ opacity: 1, y: 0 }} // マウント時
-          exit={{ opacity: 0, y: 10 }} // アンマウント時
-          transition={{
-            duration: 0.8,
-          }}
-        >
-          <WorkContainer>
-            <a href="https://handai-yamato.github.io/kyono-kaigobin-training/" target={"blank"}>
-              <WorksImage src={KyonokaigobinImage} alt="" />
-            </a>
-            <div className="">
-              <WorksTitle>京の介護便 / 楽天Topページ</WorksTitle>
-              <WorksText>”京の介護便”のサイトを模写コーディングしました。</WorksText>
-              <WorksList>
-                <WorksItem>
-                  <LinkHead>WEBSITE</LinkHead>
-                  <LinkText>
-                    <a
-                      href="https://handai-yamato.github.io/kyono-kaigobin-training/"
-                      target={"blank"}
-                    >
-                      https://handai-yamato.github.io/kyono-kaigobin-training/
-                    </a>
-                  </LinkText>
-                </WorksItem>
-                <WorksItem>
-                  <LinkHead>SOURCE</LinkHead>
-                  <LinkText>
-                    <a
-                      href="https://github.com/Handai-Yamato/kyono-kaigobin-training"
-                      target={"blank"}
-                    >
-                      https://github.com/Handai-Yamato/kyono-kaigobin-training
-                    </a>
-                  </LinkText>
-                </WorksItem>
-                <WorksItem>
-                  <LinkHead>STACK</LinkHead>
-                  <LinkText>HTML, CSS, Sass, gulp,</LinkText>
-                </WorksItem>
-              </WorksList>
-            </div>
-          </WorkContainer>
-        </motion.div>
+        <WorkContainer>
+          <a href="https://line-clone-a5d94.web.app/" target={"blank"}>
+            <WorksImage src={LineCloneImage} alt="" />
+          </a>
+          <div>
+            <WorksTitle>LINE Clone</WorksTitle>
+            <WorksText>
+              Reactを用いて、Firebase-AuthenticationでGoogle認証の実装に挑戦しました。
+            </WorksText>
+            <WorksList>
+              <WorksItem>
+                <LinkHead>WEBSITE</LinkHead>
+                <LinkText>
+                  <a href="https://line-clone-a5d94.web.app/" target={"blank"}>
+                    https://line-clone-a5d94.web.app/
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>SOURCE</LinkHead>
+                <LinkText>
+                  <a href="https://github.com/Handai-Yamato/react-line-clone" target={"blank"}>
+                    https://github.com/Handai-Yamato/react-line-clone
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>STACK</LinkHead>
+                <LinkText>React, MUI, Firebase(Hosting, Authentication)</LinkText>
+              </WorksItem>
+            </WorksList>
+          </div>
+        </WorkContainer>
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }} // 初期状態
-          animate={{ opacity: 1, y: 0 }} // マウント時
-          exit={{ opacity: 0, y: 10 }} // アンマウント時
-          transition={{
-            duration: 0.8,
-          }}
-        >
-          <WorkContainer>
-            <a href="https://handai-yamato.github.io/typing-game-app/">
-              <WorksImage src={TypingGameImage} alt="" />
-            </a>
-            <div>
-              <WorksTitle>Typing Game</WorksTitle>
-              <WorksText>
-                寿○打風のタイピングゲームです。APIをたたく学習を兼ねてつくりました。
-              </WorksText>
-              <WorksList>
-                <WorksItem>
-                  <LinkHead>WEBSITE</LinkHead>
-                  <LinkText>
-                    <a href="https://handai-yamato.github.io/typing-game-app/" target={"blank"}>
-                      https://handai-yamato.github.io/typing-game-app/
-                    </a>
-                  </LinkText>
-                </WorksItem>
-                <WorksItem>
-                  <LinkHead>SOURCE</LinkHead>
-                  <LinkText>
-                    <a href="https://github.com/Handai-Yamato/typing-game-app" target={"blank"}>
-                      https://github.com/Handai-Yamato/typing-game-app
-                    </a>
-                  </LinkText>
-                </WorksItem>
-                <WorksItem>
-                  <LinkHead>STACK</LinkHead>
-                  <LinkText>HTML, CSS, JavaScript(Vanilla)</LinkText>
-                </WorksItem>
-              </WorksList>
-            </div>
-          </WorkContainer>
-        </motion.div>
+        <WorkContainer>
+          <a href="https://handai-yamato.github.io/kyono-kaigobin-training/" target={"blank"}>
+            <WorksImage src={KyonokaigobinImage} alt="" />
+          </a>
+          <div className="">
+            <WorksTitle>京の介護便 / 楽天Topページ</WorksTitle>
+            <WorksText>”京の介護便”のサイトを模写コーディングしました。</WorksText>
+            <WorksList>
+              <WorksItem>
+                <LinkHead>WEBSITE</LinkHead>
+                <LinkText>
+                  <a
+                    href="https://handai-yamato.github.io/kyono-kaigobin-training/"
+                    target={"blank"}
+                  >
+                    https://handai-yamato.github.io/kyono-kaigobin-training/
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>SOURCE</LinkHead>
+                <LinkText>
+                  <a
+                    href="https://github.com/Handai-Yamato/kyono-kaigobin-training"
+                    target={"blank"}
+                  >
+                    https://github.com/Handai-Yamato/kyono-kaigobin-training
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>STACK</LinkHead>
+                <LinkText>HTML, CSS, Sass, gulp,</LinkText>
+              </WorksItem>
+            </WorksList>
+          </div>
+        </WorkContainer>
+
+        <WorkContainer>
+          <a href="https://handai-yamato.github.io/typing-game-app/">
+            <WorksImage src={TypingGameImage} alt="" />
+          </a>
+          <div>
+            <WorksTitle>Typing Game</WorksTitle>
+            <WorksText>
+              寿○打風のタイピングゲームです。APIをたたく学習を兼ねてつくりました。
+            </WorksText>
+            <WorksList>
+              <WorksItem>
+                <LinkHead>WEBSITE</LinkHead>
+                <LinkText>
+                  <a href="https://handai-yamato.github.io/typing-game-app/" target={"blank"}>
+                    https://handai-yamato.github.io/typing-game-app/
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>SOURCE</LinkHead>
+                <LinkText>
+                  <a href="https://github.com/Handai-Yamato/typing-game-app" target={"blank"}>
+                    https://github.com/Handai-Yamato/typing-game-app
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>STACK</LinkHead>
+                <LinkText>HTML, CSS, JavaScript(Vanilla)</LinkText>
+              </WorksItem>
+            </WorksList>
+          </div>
+        </WorkContainer>
       </WorksWrap>
-    </div>
+    </motion.div>
   );
 };
 
@@ -323,7 +315,6 @@ const WorksItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 `;
 
 const LinkHead = styled.div`
