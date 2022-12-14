@@ -56,7 +56,9 @@ const WorksPage = () => {
               </WorksItem>
               <WorksItem>
                 <LinkHead>STACK</LinkHead>
-                <LinkText>Next.js,MUI,Framer motion,microCMS,Vercel(Hosting)</LinkText>
+                <LinkText>
+                  Next.js, MUI, Framer motion, microCMS,<br></br>Vercel(Hosting)
+                </LinkText>
               </WorksItem>
             </WorksList>
           </div>
@@ -158,7 +160,9 @@ const WorksPage = () => {
               </WorksItem>
               <WorksItem>
                 <LinkHead>STACK</LinkHead>
-                <LinkText>React, MUI, Firebase(Hosting, Authentication)</LinkText>
+                <LinkText>
+                  React, MUI,<br></br>Firebase(Hosting, Authentication)
+                </LinkText>
               </WorksItem>
             </WorksList>
           </div>
@@ -328,4 +332,5 @@ const LinkText = styled.span`
   margin-top: 4px;
   margin-left: 8px;
   text-align: left;
+  word-break: break-all;
 `;
