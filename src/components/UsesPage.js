@@ -29,7 +29,7 @@ export default function BasicModal() {
     <motion.div variants={variants} initial="hidden" animate="visible">
       <h2>My Gadget</h2>
       <HeadText>
-        現在働いている会社では完全リモートワークを実施しており、家のデスクで過ごす時間が格段に増えました。元々ガジェットが好きなこともありますが、仕事の生産性向上を目的に家のワークスペースはこだわりたいと考えています。
+        現在働いている会社では完全リモートワークを実施しており、家のデスクで過ごす時間が格段に増えました。元々ガジェットが好きなこともありますが、仕事の生産性向上を目的に家のワークスペースにはこだわりを持っています。
       </HeadText>
 
       <Contents>
