@@ -268,6 +268,7 @@ const WorkContainer = styled.div`
 `;
 
 const WorksImage = styled.img`
+  height: 70vw;
   width: 100%;
   border-radius: 12px;
   border: 2px solid rgb(243 244 246);
@@ -281,8 +282,7 @@ const WorksImage = styled.img`
 
   ${sm`
   width: 280px;
-  height: 200px;
-  
+  height: 240px;
   `}
 `;
 
