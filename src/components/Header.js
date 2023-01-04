@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <HeaderBlock>
       <HeaderInner>
-        <div onclick="" ontouchstart="">
+        <div>
           <HeaderNameLink to="/">
             <HeaderIcon src={icon} alt="" />
             <HeaderName>Yamato Handai</HeaderName>
