@@ -36,18 +36,18 @@ const HomePage = () => {
         <a href="https://crmlab.jp/" target={"blank"}>
           株式会社CRMラボ
         </a>
-        でWEBコーダーとして働いています。コーディング業務をはじめ、ECサイトの運営代行にも携わっており、楽天やShopifyをはじめとする様々なカートシステムを用いて、販促の企画や商品編集、デザインの修正など幅広く業務をしています。
+        でWEBコーダーとして働いています。コーディング業務をはじめ、ECサイトの運営代行にも携わっており、楽天やShopifyをはじめとする様々なカートシステムを用いて、販促の企画や商品編集、WEBページの修正など幅広い業務に携わっています。
       </p>
       <br></br>
       <p>
-        元々、高校卒業後に農林水産省へ入り、土木技術を専門とした仕事に携わっていました。安定した給料で福利厚生も良かったのですが、仕事自体をあまり好きにはなれず、何か自分にあった職業はないか探す日々を送っていました。
+        元々、高校卒業後に農林水産省へ入り、土木技術を専門とした仕事に携わっていました。安定した給料で福利厚生も良かったのですが、仕事自体をあまり好きにはなれず、何か自分にあった職業はないかと転職先を探す日々を送っていました。
       </p>
       <p>
         WEBエンジニアという仕事を知って独学をはじめてから、これが天職かも！？と感じたため、転職し現在の会社に入社しました。
       </p>
       <br></br>
       <p>
-        現在はフロントエンドエンジニアとしてモダンな技術を用いて開発をしたい！と考えるようになり、Next.jsの勉強をしています。
+        現在はフロントエンドエンジニアとしてモダンな技術を用いて開発をしたい！と考えるようになり、React（Next.js）の勉強をしています。
       </p>
       <br></br>
 
@@ -56,7 +56,7 @@ const HomePage = () => {
         <p>1998年 宮崎県生まれ</p>
         <p>2017年 宮崎県立都城農業高等学校卒業</p>
         <p>2017年 農林水産省近畿農政局入省</p>
-        <p>2022年〜現在 株式会社CRMラボ</p>
+        <p>2022年 〜 現在 株式会社CRMラボ</p>
       </div>
 
       <div>
@@ -71,21 +71,27 @@ const HomePage = () => {
         <h2>Skills</h2>
         <SkillsContent>
           <SkillsTitle>
-            {"【"}Markup{"】"}
+            {"<"}Markup{">"}
           </SkillsTitle>
-          <SkillsText>HTML, CSS(Sass), Tailwind CSS</SkillsText>
+          <SkillsText>HTML, CSS(Sass, Tailwind CSS)</SkillsText>
         </SkillsContent>
         <SkillsContent>
           <SkillsTitle>
-            {"【"}FrontEnd{"】"}
+            {"<"}FrontEnd{">"}
           </SkillsTitle>
-          <SkillsText>JavaScript, gulp, React(a little...)</SkillsText>
+          <SkillsText>JavaScript, gulp, React(Next.js)</SkillsText>
         </SkillsContent>
         <SkillsContent>
           <SkillsTitle>
-            {"【"}Others{"】"}
+            {"<"}Others{">"}
           </SkillsTitle>
-          <SkillsText>git, npm</SkillsText>
+          <SkillsText>git(GitHub), npm</SkillsText>
+        </SkillsContent>
+        <SkillsContent>
+          <SkillsTitle>
+            {"<"}Still... {">"}
+          </SkillsTitle>
+          <SkillsText>TypeScript</SkillsText>
         </SkillsContent>
 
         <PortfolioLink to="/works">
@@ -129,8 +135,8 @@ const SkillsText = styled.p`
 `;
 
 const SkillsTitle = styled.p`
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 16px;
 `;
 
 const PortfolioLink = styled(Link)`
