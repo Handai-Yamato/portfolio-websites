@@ -31,6 +31,32 @@ const WorksPage = () => {
       <h2>Works</h2>
 
       <WorksWrap>
+        <WorkContainer
+          style={{
+            textAlign: "center",
+          }}
+        >
+          <Development></Development>
+          <div>
+            <WorksTitle>Recipe App</WorksTitle>
+            <WorksText>Next.jsとFramer-Motionを用いたレシピ検索アプリ</WorksText>
+            <WorksList>
+              <WorksItem>
+                <LinkHead>WEBSITE</LinkHead>
+                <LinkText></LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>SOURCE</LinkHead>
+                <LinkText></LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>STACK</LinkHead>
+                <LinkText></LinkText>
+              </WorksItem>
+            </WorksList>
+          </div>
+        </WorkContainer>
+
         <WorkContainer>
           <a href="https://crmlab-clone.vercel.app/" target={"blank"}>
             <WorksImage src={CrmlabCloneImage} alt="" />
@@ -38,7 +64,7 @@ const WorksPage = () => {
           <div>
             <WorksTitle>CRMLab corporate websites</WorksTitle>
             <WorksText>
-              Next.jsとmicroCMSを連携して、自社サイトをいい感じ（勝手に）につくりなおしてみました。
+              Next.jsとmicroCMSを連携して、いい感じ（勝手に）につくりなおしてみた自社サイト。
             </WorksText>
             <WorksList>
               <WorksItem>
@@ -58,7 +84,7 @@ const WorksPage = () => {
               <WorksItem>
                 <LinkHead>STACK</LinkHead>
                 <LinkText>
-                  Next.js, MUI, Framer motion, microCMS,<br></br>Vercel(Hosting)
+                  Next.js, MUI, Framer-Motion, microCMS,<br></br>Vercel(Hosting)
                 </LinkText>
               </WorksItem>
             </WorksList>
@@ -71,7 +97,7 @@ const WorksPage = () => {
           </a>
           <div>
             <WorksTitle>My Portfolio</WorksTitle>
-            <WorksText>ポートフォリオをReactでつくりました。</WorksText>
+            <WorksText>Reactでつくったポートフォリオサイト。</WorksText>
             <WorksList>
               <WorksItem>
                 <LinkHead>WEBSITE</LinkHead>
@@ -91,7 +117,7 @@ const WorksPage = () => {
               </WorksItem>
               <WorksItem>
                 <LinkHead>STACK</LinkHead>
-                <LinkText>React, Framer motion, Firebase(Hosting)</LinkText>
+                <LinkText>React, Framer-Motion, Firebase(Hosting)</LinkText>
               </WorksItem>
             </WorksList>
           </div>
@@ -104,8 +130,8 @@ const WorksPage = () => {
           <div>
             <WorksTitle>Gadget-Shop demo</WorksTitle>
             <WorksText>
-              Next.jsのSSGを学習するためにつくりました。APIサーバーは
-              <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a>を使用しています。
+              Next.jsのSSGを学習するためにつくったデモECサイト。<br></br>APIサーバーは
+              <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a>を使用。
             </WorksText>
             <WorksList>
               <WorksItem>
@@ -126,7 +152,7 @@ const WorksPage = () => {
               </WorksItem>
               <WorksItem>
                 <LinkHead>STACK</LinkHead>
-                <LinkText>Next.js, MUI, Framer motion, Netlify(Hosting)</LinkText>
+                <LinkText>Next.js, MUI, Framer-Motion, Netlify(Hosting)</LinkText>
               </WorksItem>
             </WorksList>
           </div>
@@ -139,7 +165,7 @@ const WorksPage = () => {
           <div>
             <WorksTitle>Chatobot App</WorksTitle>
             <WorksText>
-              React、Firebase、MUIの学習を兼ねて、私のことについて質問できるチャットボットアプリをつくりました。
+              React、Firebase、MUIの学習を兼ねてつくった、自己紹介チャットボットアプリ。
             </WorksText>
             <WorksList>
               <WorksItem>
@@ -172,9 +198,7 @@ const WorksPage = () => {
           </a>
           <div>
             <WorksTitle>LINE Clone</WorksTitle>
-            <WorksText>
-              Reactを用いて、Firebase-AuthenticationでGoogle認証の実装に挑戦しました。
-            </WorksText>
+            <WorksText>React x Firebase-AuthenticationでつくったLINEクローン。</WorksText>
             <WorksList>
               <WorksItem>
                 <LinkHead>WEBSITE</LinkHead>
@@ -206,7 +230,7 @@ const WorksPage = () => {
           </a>
           <div className="">
             <WorksTitle>京の介護便 / 楽天Topページ</WorksTitle>
-            <WorksText>”京の介護便”のサイトを模写コーディングしました。</WorksText>
+            <WorksText>”京の介護便”の模写コーディングしました。</WorksText>
             <WorksList>
               <WorksItem>
                 <LinkHead>WEBSITE</LinkHead>
@@ -244,9 +268,7 @@ const WorksPage = () => {
           </a>
           <div>
             <WorksTitle>Typing Game</WorksTitle>
-            <WorksText>
-              寿○打風のタイピングゲームです。APIをたたく学習を兼ねてつくりました。
-            </WorksText>
+            <WorksText>APIをたたく学習を兼ねてつくった、寿○打風のタイピングゲーム。</WorksText>
             <WorksList>
               <WorksItem>
                 <LinkHead>WEBSITE</LinkHead>
@@ -315,6 +337,32 @@ const WorksImage = styled.img`
   `}
 `;
 
+const Development = styled.div`
+  position: relative;
+  height: 70vw;
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid rgb(243 244 246);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.4s;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "development...";
+    font-size: 24px;
+    font-weight: 100;
+  }
+
+  ${sm`
+    width: 280px;
+    height: 240px;
+  `}
+`;
+
 const WorksTitle = styled.h3`
   margin-top: 16px;
   font-size: 1.125rem;
@@ -324,7 +372,6 @@ const WorksTitle = styled.h3`
 const WorksText = styled.p`
   margin-top: 16px;
   text-align: left;
-  text-align: justify;
 
   ${sm`
    min-height: 72px;
