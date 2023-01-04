@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 20px;
         font-weight: 600;
         border-bottom: solid 3px;
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.05rem;
         line-height: 1.2;
         font-family: "M PLUS Rounded 1c", sans-serif;
     }
