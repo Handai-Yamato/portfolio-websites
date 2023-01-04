@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a:hover {
-        text-decoration:  underline;
+        text-decoration:  none;
         opacity: 0.7;
     }
     
