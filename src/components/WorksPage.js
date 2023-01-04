@@ -139,7 +139,7 @@ const WorksPage = () => {
           <div>
             <WorksTitle>Chatobot App</WorksTitle>
             <WorksText>
-              チャットボット形式で私のことについて質問できます。ReactとFirebase、MUIの学習のためにつくりました。
+              React、Firebase、MUIの学習を兼ねて、私のことについて質問できるチャットボットアプリをつくりました。
             </WorksText>
             <WorksList>
               <WorksItem>
@@ -194,9 +194,7 @@ const WorksPage = () => {
               </WorksItem>
               <WorksItem>
                 <LinkHead>STACK</LinkHead>
-                <LinkText>
-                  React, MUI, Firebase(Hosting, Authentication)
-                </LinkText>
+                <LinkText>React, MUI, Firebase(Hosting, Authentication)</LinkText>
               </WorksItem>
             </WorksList>
           </div>
