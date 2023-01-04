@@ -195,7 +195,7 @@ const WorksPage = () => {
               <WorksItem>
                 <LinkHead>STACK</LinkHead>
                 <LinkText>
-                  React, MUI,<br></br>Firebase(Hosting, Authentication)
+                  React, MUI, Firebase(Hosting, Authentication)
                 </LinkText>
               </WorksItem>
             </WorksList>
