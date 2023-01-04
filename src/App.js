@@ -1,23 +1,21 @@
 import "./assets/styles/style.css";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
-import UsesPage from "./components/UsesPage";
 import WorksPage from "./components/WorksPage";
 import styled from "styled-components";
 import { sm } from "../src/components/media";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import HamburgerMenu from "./components/HamburgerMenu";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
     <Router>
+      <ScrollTop />
       <Header />
-      <HamburgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
       <Main>
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/works" element={<WorksPage />}></Route>
-          <Route path="/uses" element={<UsesPage />}></Route>
         </Routes>
       </Main>
     </Router>

@@ -21,9 +21,7 @@ const Header = () => {
             <li>
               <Link to="/works">Works</Link>
             </li>
-            <li>
-              <Link to="/uses">Uses</Link>
-            </li>
+
             <li>
               <GithubLink
                 href="https://github.com/Handai-Yamato/portfolio-websites"

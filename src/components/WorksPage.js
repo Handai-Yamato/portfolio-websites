@@ -294,12 +294,8 @@ const WorksWrap = styled.div`
 `;
 
 const WorkContainer = styled.div`
-  margin-top: 40px;
+  margin-top: 24px;
   text-align: center;
-
-  ${sm`
-    margin-top: 24px;
-  `}
 `;
 
 const WorksImage = styled.img`
