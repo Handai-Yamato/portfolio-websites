@@ -35,9 +35,9 @@ const WorksPage = () => {
             <WorksImage src={CrmlabCloneImage} alt="" />
           </a>
           <div>
-            <WorksTitle>CRMラボ corporate websites</WorksTitle>
+            <WorksTitle>CRMLab corporate websites</WorksTitle>
             <WorksText>
-              Next.jsとmicroCMSを連携して、勝手に自社サイトをいい感じにつくりなおしてみました。
+              Next.jsとmicroCMSを連携して、自社サイトをいい感じ（勝手に）につくりなおしてみました。
             </WorksText>
             <WorksList>
               <WorksItem>
@@ -70,9 +70,7 @@ const WorksPage = () => {
           </a>
           <div>
             <WorksTitle>My Portfolio</WorksTitle>
-            <WorksText>
-              ポートフォリオをReactでつくりました。CSSはstyled-componentsを使用しています。
-            </WorksText>
+            <WorksText>ポートフォリオをReactでつくりました。</WorksText>
             <WorksList>
               <WorksItem>
                 <LinkHead>WEBSITE</LinkHead>
@@ -263,7 +261,7 @@ const WorkContainer = styled.div`
   margin-top: 40px;
 
   ${sm`
-  margin-top: 24px;
+    margin-top: 24px;
   `}
 `;
 
@@ -281,8 +279,8 @@ const WorksImage = styled.img`
   }
 
   ${sm`
-  width: 280px;
-  height: 240px;
+    width: 280px;
+    height: 240px;
   `}
 `;
 
@@ -290,11 +288,6 @@ const WorksTitle = styled.h3`
   margin-top: 16px;
   font-size: 1.125rem;
   line-height: 1.75rem;
-
-  ${sm`
-      // margin-top: 16px;
-      // margin-bottom: 8px;
-  `}
 `;
 
 const WorksText = styled.p`
@@ -302,7 +295,7 @@ const WorksText = styled.p`
   text-align: left;
 
   ${sm`
-  min-height: 72px;
+   min-height: 72px;
   `}
 `;
 
