@@ -5,6 +5,7 @@ import TypingGameImage from "../assets/img/image_typinggame.png";
 import PortfolioImage from "../assets/img/image_portfolio.png";
 import LineCloneImage from "../assets/img/image_line-clone.png";
 import CrmlabCloneImage from "../assets/img/image_crmlab-clone.png";
+import GadgetShopImage from "../assets/img/image_gadget-shop.png";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { sm } from "./media";
@@ -91,6 +92,41 @@ const WorksPage = () => {
               <WorksItem>
                 <LinkHead>STACK</LinkHead>
                 <LinkText>React, Framer motion, Firebase(Hosting)</LinkText>
+              </WorksItem>
+            </WorksList>
+          </div>
+        </WorkContainer>
+
+        <WorkContainer>
+          <a href="https://symphonious-cendol-d8e8e8.netlify.app/" target={"blank"}>
+            <WorksImage src={GadgetShopImage} alt="" />
+          </a>
+          <div>
+            <WorksTitle>Gadget-Shop demo</WorksTitle>
+            <WorksText>
+              Next.jsのSSGを学習するためにつくりました。APIサーバーは
+              <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a>を使用しています。
+            </WorksText>
+            <WorksList>
+              <WorksItem>
+                <LinkHead>WEBSITE</LinkHead>
+                <LinkText>
+                  <a href="https://symphonious-cendol-d8e8e8.netlify.app/">
+                    https://symphonious-cendol-d8e8e8.netlify.app/
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>SOURCE</LinkHead>
+                <LinkText>
+                  <a href="https://github.com/Handai-Yamato/gadget-shop-demo" target={"blank"}>
+                    https://github.com/Handai-Yamato/gadget-shop-demos
+                  </a>
+                </LinkText>
+              </WorksItem>
+              <WorksItem>
+                <LinkHead>STACK</LinkHead>
+                <LinkText>Next.js, MUI, Framer motion, Netlify(Hosting)</LinkText>
               </WorksItem>
             </WorksList>
           </div>
@@ -259,6 +295,7 @@ const WorksWrap = styled.div`
 
 const WorkContainer = styled.div`
   margin-top: 40px;
+  text-align: center;
 
   ${sm`
     margin-top: 24px;
@@ -291,8 +328,9 @@ const WorksTitle = styled.h3`
 `;
 
 const WorksText = styled.p`
-  margin-top: 8px;
+  margin-top: 16px;
   text-align: left;
+  text-align: justify;
 
   ${sm`
    min-height: 72px;
