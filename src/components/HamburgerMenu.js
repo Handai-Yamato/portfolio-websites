@@ -48,12 +48,12 @@ export default function TemporaryDrawer() {
         </ListItemButton>
       </Link>
 
-      <Link href="https://github.com/Handai-Yamato/portfolio-websites">
+      <a href="https://github.com/Handai-Yamato/portfolio-websites">
         <ListItemButton>
           <GitHubIcon sx={{ marginRight: "8px" }} />
           Source
         </ListItemButton>
-      </Link>
+      </a>
     </Box>
   );
 
