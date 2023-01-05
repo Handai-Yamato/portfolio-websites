@@ -11,7 +11,7 @@ const Header = () => {
       <HeaderInner>
         <div>
           <HeaderNameLink to="/">
-            <HeaderIcon src={icon} alt="" />
+            <HeaderIcon src={icon} alt="" onTouchStart="" />
             <HeaderName>Yamato Handai</HeaderName>
           </HeaderNameLink>
         </div>
@@ -88,15 +88,28 @@ const HeaderNameLink = styled(Link)`
   gap: 4px;
   color: #ffff;
 
-  &:hover {
+  &:active {
     text-decoration: none;
 
     & img {
-      rotate: -10deg;
+      rotate: -30deg;
       transition-duration: 0.3s;
       transition-timing-function: ease;
     }
   }
+
+  ${sm`
+    &:hover {
+    text-decoration: none;
+
+      & img {
+        rotate: -10deg;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+      }
+    }
+     
+  `}
 `;
 
 const HeaderIcon = styled.img`
